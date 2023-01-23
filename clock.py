@@ -32,7 +32,7 @@ def date():
     global date1
     global date2
     now=datetime.now()
-    date2 = f"{now.day}.{now.month}.{now.year}"
+    date2 = f"{now.day:0>2}.{now.month:0>2}.{now.year}"
     if date2 != date1:
         date1 = date2
         return date2
